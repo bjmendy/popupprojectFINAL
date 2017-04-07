@@ -19,7 +19,7 @@
 
 • As a user, I will be able to see the input show in the box.
 
-
+![alt tag](https://github.com/bjmendy/popupprojectFINAL/blob/master/Screen%20Shot%202017-04-03%20at%209.54.45%20AM.png)
 
 • I originally wanted this to be able to have an image input, but with ruby and sql it is the HARDEST thing to do.
 
