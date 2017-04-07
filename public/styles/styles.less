@@ -1,0 +1,77 @@
+
+@base: #f938ab;
+@pink: #FFB6C1;
+@orange: #FFB973;
+@blue: #C0DFFF;
+@white: #ffffff;
+@verdana: Verdana, Sans-Serif;
+@teal: #00cdcd;
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow:         @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+.box {
+  color: saturate(@base, 5%);
+  border-color: lighten(@base, 30%);
+  div { .box-shadow(0 0 5px, 30%) }
+}
+/////???
+
+#headwrap {
+	height: 75px;
+	border: 2px solid @pink;
+	width: 675px;
+	margin: 10%;
+	background-color: @teal;
+	opacity: .55;
+	h1 {
+		opacity: 2;
+	}
+}
+
+body {
+	margin: 10%;
+	background-image: -webkit-linear-gradient(0deg, @pink, @orange);
+	background-image: -moz-linear-gradient(0deg, @pink, @orange);
+	background-image: -o-linear-gradient(0deg, @pink, @orange);
+
+}
+
+h1 {
+	font-family: @verdana;
+}
+
+h2 {
+	font-family: @verdana;
+}
+
+#container3 {
+	height: 715px;
+	width: 715px;
+	background-color: @white;
+	font-family: @verdana;
+}
+
+a {
+	text-decoration: none;
+	font-family: @verdana;
+}
+
+p {
+
+}
+
+footer {
+	// background-color: @pink;
+	clear: both;
+	font-family: @verdana;
+
+}
+
+button {
+
+}

@@ -1,0 +1,39 @@
+<div id="container2" align="center">
+<div class="animated wobble" id="headwrap"><h1 align="center">Secret Popups and Shows</h1></div>
+
+<br>
+
+<div class="animated bounceInRight">
+<h2 align="center">Post</h2>
+<form action="/posts" method="post" align="center">
+<input type="text" name="title" placeholder="Title" align="center"/>
+<input type="hypertext" name="link" placeholder="Link" align="center"/>
+<input type="text" name="description" placeholder="Description" align="center"/>
+<input type="number" name="date" placeholder="Date" align="center"/>
+<button id="postbtn" align="center">Enter</button>
+</form>
+
+<br>
+<div id="container3" align="center" style="height:500px;width:500px;border:1px solid #ccc;font: Verdana, Sans-Serif;overflow:auto;">
+
+	<ul>
+		<% @posts.each do |post| %>
+		<li><%= post.username %>
+		<b>Title: </b><%= post.title %>
+		 <br>
+		<b>Link: </b><%= post.link %>
+		<br>
+		<b>Description: </b><%= post.description %>
+		<br>
+		<b>Date: </b><%= post.date %></li>
+		<br>
+		<%end%>
+	</ul>
+</div>
+</div>
+<br>
+<a href="/register/login"><form action="/register/login" method="" align="center">LOGOUT</a>
+</div>
+<br>
+
+<footer align="center">Made by Bridjet Mendyuk at General Assembly 2017</footer>
